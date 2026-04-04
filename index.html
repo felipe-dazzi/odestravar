@@ -9,8 +9,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="./style.css">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1632156054495327');
+    fbq('track', 'PageView');
+    </script>
+    <!-- End Meta Pixel Code -->
 </head>
 <body>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1632156054495327&ev=PageView&noscript=1"
+    /></noscript>
     <div id="app">
 
         <!-- Hero Section -->
@@ -47,6 +65,8 @@
             </div>
         </header>
 
+
+
         <!-- Product Definition -->
         <section class="features">
             <div class="container">
@@ -78,6 +98,32 @@
                             <h3>Escala Exponencial</h3>
                             <p>O GPS completo para sair do zero e dominar o mercado digital em menos de uma semana de execução.</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience / Mockup Section -->
+        <section class="experience">
+            <div class="container lines-spaced">
+                <div class="experience-grid">
+                    <div class="experience-stack animate-up">
+                        <div class="device-laptop">
+                            <div class="screen" style="background-image: url('./1.png'); background-size: cover; background-position: top center; padding: 0;">
+                            </div>
+                        </div>
+                        <div class="device-tablet">
+                             <div class="screen" style="background-image: url('./tablet.png'); background-size: cover; background-position: center; padding: 0;">
+                             </div>
+                        </div>
+                        <div class="device-phone">
+                            <div class="screen" style="background-image: url('./celular.jpg'); background-size: cover; background-position: center; padding: 0;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience-text animate-up">
+                       <h2 style="text-align: left;">Domine o Digital em <br><span>Qualquer Dispositivo</span></h2>
+                       <p class="lead">Acesso total e imediato. Estude pelo computador, revise no tablet ou acompanhe as estratégias direto pelo seu celular. Um ecossistema completo desenhado para a sua produtividade.</p>
                     </div>
                 </div>
             </div>
