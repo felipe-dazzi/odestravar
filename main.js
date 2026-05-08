@@ -1,5 +1,5 @@
-import { createIcons, icons } from 'lucide';
-createIcons({ icons });
+import { createIcons, Tag, ShieldCheck, CheckSquare, Layers, TrendingUp, Clock, ChevronDown } from 'lucide';
+createIcons({ icons: { Tag, ShieldCheck, CheckSquare, Layers, TrendingUp, Clock, ChevronDown } });
 
 // FAQ Accordion
 document.querySelectorAll('.faq-question').forEach(button => {
