@@ -6,30 +6,15 @@
     <title>O Destravar | Zime Digital Premium</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap"></noscript>
     <link rel="stylesheet" href="./style.css">
-    <link rel="preload" as="image" href="/thumb.webp" fetchpriority="high" type="image/webp">
-
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1632156054495327');
-    fbq('track', 'PageView');
-    </script>
-    <!-- End Meta Pixel Code -->
+    <link rel="preload" as="image" href="/thumb-mobile.webp" fetchpriority="high" type="image/webp" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="/thumb.webp" fetchpriority="high" type="image/webp" media="(min-width: 769px)">
 </head>
 <body>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1632156054495327&ev=PageView&noscript=1"
-    /></noscript>
+
     <div id="app">
 
         <!-- Hero Section -->
@@ -48,6 +33,8 @@
                         <div id="yt-facade" onclick="loadYoutube()" style="cursor:pointer; position:relative; width:100%; height:100%; background:#000; border-radius:8px; overflow:hidden;">
                             <img
                                 src="/thumb.webp"
+                                srcset="/thumb-mobile.webp 780w, /thumb.webp 1280w"
+                                sizes="(max-width: 768px) 100vw, 1280px"
                                 alt="Assista ao vídeo — O Destravar"
                                 style="width:100%; height:100%; object-fit:cover; display:block; opacity:0.85;"
                                 width="1280" height="720"
@@ -103,7 +90,7 @@
                 </div>
                 <div class="feature-grid">
                     <div class="feature-card animate-up">
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/Cinematic-Medieval-Tech-Fusion-Illustration-1.webp" alt="Estruturação" class="feature-img" loading="lazy" width="600" height="400">
+                        <img src="/feat-1-opt.webp" alt="Estruturação" class="feature-img" loading="lazy" width="600" height="400">
                         <div class="feature-content">
                             <div class="icon-box"><i data-lucide="check-square"></i></div>
                             <h3>Oferta Irresistível</h3>
@@ -111,7 +98,7 @@
                         </div>
                     </div>
                     <div class="feature-card animate-up">
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/Gemini_Generated_Image_krpgb7krpgb7krpg.webp" alt="Ecossistema" class="feature-img" loading="lazy" width="600" height="400">
+                        <img src="/feat-2-opt.webp" alt="Ecossistema" class="feature-img" loading="lazy" width="600" height="400">
                         <div class="feature-content">
                             <div class="icon-box"><i data-lucide="layers"></i></div>
                             <h3>Máquina Autogestora</h3>
@@ -119,7 +106,7 @@
                         </div>
                     </div>
                     <div class="feature-card animate-up">
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/aef837b2-45fd-4730-9eda-6097ab6e8327.webp" alt="Escala" class="feature-img" loading="lazy" width="600" height="400">
+                        <img src="/feat-3-opt.webp" alt="Escala" class="feature-img" loading="lazy" width="600" height="400">
                         <div class="feature-content">
                             <div class="icon-box"><i data-lucide="trending-up"></i></div>
                             <h3>Escala Exponencial</h3>
@@ -172,7 +159,7 @@
                             <p>Domine o tráfego pago para atrair clientes prontos para comprar, investindo apenas 10 reais por dia.</p>
                             <span class="bonus-value">HOJE: GRÁTIS</span>
                         </div>
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/36558c77-c769-44a6-8e27-d8d520e55eda.png" alt="Facebook Ads" class="bonus-img" loading="lazy" width="300" height="300">
+                        <img src="/bonus-1.webp" alt="Facebook Ads" class="bonus-img" loading="lazy" width="300" height="300">
                     </div>
 
                     <!-- Bonus 02 -->
@@ -183,7 +170,7 @@
                             <p>As mesmas ferramentas que usamos para faturar múltiplos 6 dígitos, entregues de bandeja para você.</p>
                             <span class="bonus-value">HOJE: GRÁTIS</span>
                         </div>
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/ChatGPT-Image-11-de-mar.-de-2026-16_52_28.webp" alt="Arsenal de Ferramentas" class="bonus-img" loading="lazy" width="300" height="300">
+                        <img src="/bonus-2-opt.webp" alt="Arsenal de Ferramentas" class="bonus-img" loading="lazy" width="300" height="300">
                     </div>
 
                     <!-- Bonus 03 -->
@@ -194,7 +181,7 @@
                             <p>Use prompts secretos do ChatGPT para produzir meses de conteúdo em apenas alguns minutos.</p>
                             <span class="bonus-value">HOJE: GRÁTIS</span>
                         </div>
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/ChatGPT-Image-11-de-mar.-de-2026-16_55_51.webp" alt="Pacote de Prompts" class="bonus-img" loading="lazy" width="300" height="300">
+                        <img src="/bonus-3-opt.webp" alt="Pacote de Prompts" class="bonus-img" loading="lazy" width="300" height="300">
                     </div>
 
                     <!-- Bonus 04 -->
@@ -216,7 +203,7 @@
                             <p>Garantia de que você terá o método sempre atualizado e disponível na palma da sua mão.</p>
                             <span class="bonus-value">INCLUÍDO</span>
                         </div>
-                        <img src="https://zime.digital/wp-content/uploads/2026/03/ChatGPT-Image-11-de-mar.-de-2026-17_15_25.webp" alt="Acesso Vitalício" class="bonus-img" loading="lazy" width="300" height="300">
+                        <img src="/bonus-5-opt.webp" alt="Acesso Vitalício" class="bonus-img" loading="lazy" width="300" height="300">
                     </div>
                 </div>
             </div>
@@ -337,5 +324,23 @@
         </footer>
     </div>
     <script type="module" src="./main.js"></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1632156054495327');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1632156054495327&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </body>
 </html>
