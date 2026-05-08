@@ -11,8 +11,8 @@
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap"></noscript>
     <link rel="preload" as="image" href="/thumb-mobile.webp" fetchpriority="high" type="image/webp" media="(max-width: 768px)">
     <link rel="preload" as="image" href="/thumb.webp" fetchpriority="high" type="image/webp" media="(min-width: 769px)">
-  <script type="module" crossorigin src="/assets/index-DALHeRwz.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-AsC9CmdQ.css">
+  <script type="module" crossorigin src="/assets/index-BhKlzE47.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-B26rVYeb.css">
 </head>
 <body>
 
@@ -22,12 +22,12 @@
         <header class="hero">
             <div class="container">
                 <div class="hero-content">
-                    <div class="launch-badge animate-up">
+                    <div class="launch-badge">
                         <i data-lucide="tag"></i>
                         OFERTA DE LANÇAMENTO: VAGAS LIMITADAS
                     </div>
-                    <h1 class="animate-up" style="margin-bottom: 12px;">Você tem produto. Você posta. <span>Mas a venda não vem.</span> Isso tem solução.</h1>
-                    <p class="lead animate-up" style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.4;">O Destravar revela o erro que está bloqueando suas vendas e entrega o caminho mais curto para sua primeira venda acontecer — com um método testado em +5 nichos diferentes.</p>
+                    <h1 style="margin-bottom: 12px;">Você tem produto. Você posta. <span>Mas a venda não vem.</span> Isso tem solução.</h1>
+                    <p class="lead" style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.4;">O Destravar revela o erro que está bloqueando suas vendas e entrega o caminho mais curto para sua primeira venda acontecer — com um método testado em +5 nichos diferentes.</p>
                     
                     <!-- VSL Section -->
                     <div class="vsl-container" style="margin: 20px auto; position: relative;">
@@ -70,7 +70,7 @@
                     }
                     </script>
 
-                    <div class="hero-actions animate-up">
+                    <div class="hero-actions">
                         <a href="https://pay.kiwify.com.br/rrm6NEH" class="btn btn-success pulse-green">
                             QUERO DESTRAVAR AGORA
                         </a>
@@ -325,18 +325,25 @@
         </footer>
     </div>
 
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code (deferred for performance) -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1632156054495327');
-    fbq('track', 'PageView');
+    (function(){
+      function loadPixel(){
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','1632156054495327');
+        fbq('track','PageView');
+      }
+      'requestIdleCallback' in window
+        ? requestIdleCallback(loadPixel,{timeout:4000})
+        : setTimeout(loadPixel,3000);
+    })();
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1632156054495327&ev=PageView&noscript=1"

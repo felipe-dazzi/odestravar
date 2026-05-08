@@ -17,7 +17,6 @@
   --separator-color: rgba(186, 145, 33, 0.15);
 
   font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
