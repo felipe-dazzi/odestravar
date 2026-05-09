@@ -518,6 +518,71 @@
     footer p { font-size: .74rem; color: var(--muted); }
     footer a { color: var(--muted); text-decoration: underline; }
     footer a:hover { color: var(--gold2); }
+
+    /* ════════════════════════════
+       RESPONSIVO — TABLET (≤768px)
+    ════════════════════════════ */
+    @media (max-width: 768px) {
+      section { padding: 60px 0; }
+      .wrap { padding: 0 16px; }
+
+      .disp-grid { gap: 28px; }
+
+      .bonus-card-body { padding: 18px 16px; }
+      .bonus-card-img { width: 160px; }
+
+      .oferta-card { padding: 36px 24px; }
+
+      .quote-block { padding: 14px 16px; }
+      .quote-block p { font-size: .9rem; }
+    }
+
+    /* ════════════════════════════
+       RESPONSIVO — MOBILE (≤480px)
+    ════════════════════════════ */
+    @media (max-width: 480px) {
+      section { padding: 48px 0; }
+      .wrap { padding: 0 14px; }
+
+      #hero { padding: 24px 0 48px; }
+
+      h1 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+      h2 { font-size: clamp(1.3rem, 6vw, 1.8rem); }
+
+      .hero-sub { font-size: .93rem; margin-bottom: 24px; }
+
+      .video-wrap { margin: 24px auto; border-radius: 8px; }
+      .video-play { width: 56px; height: 56px; }
+      .video-play::after {
+        border-top-width: 10px;
+        border-bottom-width: 10px;
+        border-left-width: 17px;
+      }
+
+      .btn-green { font-size: .85rem; padding: 14px 20px; }
+
+      .metodo-cards { gap: 12px; }
+      .metodo-card-body { padding: 14px 12px; }
+
+      .vs-grid { gap: 12px; }
+
+      .disp-grid { gap: 20px; }
+
+      .bonus-card { grid-template-columns: 1fr; }
+      .bonus-card-img { width: 100%; height: 200px; }
+      .bonus-card-body { padding: 16px; }
+
+      .oferta-card { padding: 28px 16px; border-radius: 12px; }
+      .check-list { max-width: 100%; }
+
+      .garantia-grid { grid-template-columns: 1fr; text-align: center; gap: 20px; }
+      .garantia-badge-img { margin: 0 auto; }
+
+      .chips { gap: 8px; }
+      .chip { font-size: .72rem; padding: 5px 11px; }
+
+      .faq-q { font-size: .88rem; }
+    }
   </style>
 </head>
 <body>
@@ -541,11 +606,10 @@
     </a>
 
     <p class="hero-sub" style="margin-top:16px;">
-      Descubra a estratégia que já destravou <strong>5 nichos diferentes</strong> no digital.
-      O Destravar combina <strong>fundamentos reais</strong> com o poder do
-      <strong style="color:var(--gold2);font-size:1.15em;letter-spacing:.03em;">CLAUDE</strong> — a IA mais <strong>completa</strong> do mercado — para você
-      <strong>criar seu produto</strong>, montar sua <strong>estrutura de vendas</strong>
-      e fazer sua <strong>primeira venda no menor tempo possível.</strong>
+      A estratégia que já destravou <strong>5 nichos diferentes</strong> — combinando
+      <strong>fundamentos reais</strong> com o poder do
+      <strong style="color:var(--gold2);font-size:1.15em;letter-spacing:.03em;">CLAUDE</strong>,
+      a IA mais <strong>completa</strong> do mercado, para você vender mais rápido.
     </p>
 
     <div class="btn-wrap" style="margin-top:32px;">
