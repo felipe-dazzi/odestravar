@@ -600,11 +600,25 @@
       Precisa do método certo.
     </h1>
 
-    <!-- Vídeo YouTube -->
-    <a class="video-wrap" href="https://www.youtube.com/watch?v=zsFcnKHSAf8&t=1s" target="_blank" rel="noopener">
-      <img src="https://img.youtube.com/vi/zsFcnKHSAf8/maxresdefault.jpg" alt="Assistir vídeo O Destravar" />
+    <!-- Vídeo YouTube (facade) -->
+    <div class="video-wrap" id="yt-facade" onclick="loadYoutube()" style="cursor:pointer;">
+      <img src="https://img.youtube.com/vi/zsFcnKHSAf8/maxresdefault.jpg" alt="Assistir vídeo O Destravar" fetchpriority="high" loading="eager" />
       <div class="video-play"></div>
-    </a>
+    </div>
+    <script>
+    function loadYoutube() {
+      var wrap = document.getElementById('yt-facade');
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube.com/embed/zsFcnKHSAf8?autoplay=1&rel=0&controls=1';
+      iframe.setAttribute('frameborder', '0');
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
+      iframe.setAttribute('allowfullscreen', '');
+      iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border-radius:12px;';
+      wrap.innerHTML = '';
+      wrap.appendChild(iframe);
+      wrap.onclick = null;
+    }
+    </script>
 
     <p class="hero-sub" style="margin-top:16px;">
       O método para iniciantes que une fundamentos reais com o
